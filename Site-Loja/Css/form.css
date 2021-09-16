@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    background-image: url(../img/codigo-fundo.jpg);
+    background-size: cover;
+    text-align: center;
+    
+}
+
+/* Configuração do Formulário */
+#formulario{
+    width: 400px;
+    height: 300px;
+    background-color:rgba(0, 0, 0, 0.8);
+    margin: auto; /* Alinhamento dos filhos */
+    text-align: center; /* Alinhamento de si mesmo */
+    padding-top: 20px;
+    margin-top: 100px; 
+    backdrop-filter: blur(4px); /* Efeito para borrar o fundo */
+    border-radius: 10px;
+}
+
+label{
+    color: white;
+    font-size: 20px;
+}
+
+input{
+    width: 70%;
+    height: 30px;
+    font-size: 20px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: grey;
+    border: none; /* Tira a borda do botão */
+    font-size: 23px;
+    margin-top: 80px;
+}
+
+button:hover{ /* Efeito que escurece o botão */
+    background-color: rgba(88, 88, 88, 0.938);
+}
+
+.voltar{
+    color: white;
+    font-size: 20px;
+    background-color: rgba(58, 57, 57, 0.308);
+    text-decoration: none;
+}
