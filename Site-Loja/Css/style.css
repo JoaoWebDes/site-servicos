@@ -5,25 +5,34 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
+
+body{
+    overflow-x: hidden; /* Barra de rolagem horizontal */
+}
+
 
 .menu ul li a{ /* Selecionando elementos através do seu parentesco */
     color: white;
     font-size: 20px;
     text-decoration: none;
-    padding: 20px; /* espaçamento entre os links*/
+    padding: 20px; /* Espaçamento entre os links*/
     display: inline-block; 
     transition: background .3s ; /* Responsável por criar timer quando passa o mouse por cima */
 }
 
 .menu ul li a:hover{
-    background-color: rgb(28, 66, 100); /* muda a cor de fundo quando passa o mouse por cima */
+    background-color: rgb(28, 66, 100); /* Muda a cor de fundo quando passa o mouse por cima */
 }
 
 .menu{
     width: 100%;
     background-color: rgba(64, 68, 71, 0.8 );
     position: fixed; /* Fixando o menu no topo da tela */
+    margin: 0;
+    padding: 0;
+    height: 70px;
 }
 
 li{
@@ -32,9 +41,10 @@ li{
 
 #conteudo{ /* Elemento Pai */
     width: 100%; /* Largura */
-    height: 120vh; /* Altura */
+    height: 100%; /* Altura */
     background-color: rgb(28, 66, 100);
-    display: flex; /* Tornando o layout flexível */
+    margin: auto;
+    padding-bottom: 250px;
 }
 
 .caixa{
@@ -44,6 +54,8 @@ li{
     margin: auto;
     border-radius: 15px; /* Propriedade responsável por arredondar as bordas */
     text-align: center;   
+    padding-top: 170px;
+    margin-top: 250px;
 }
 
 .img-um{
@@ -81,15 +93,14 @@ li{
     color: white;
     font-size: 35px;
     background-color: rgba(0,0,0,0.8);
-    margin-top: 170px;
-    
+    margin: 0;
 }
 .link-caixa{ /* Classe da tag <a> */
     color: white;
     background-color: rgba(0,0,0,0.8);
     text-decoration: none;
     font-size: 25px;
-    display: block;    
+    display: block;
 }
 
 #rodape{
