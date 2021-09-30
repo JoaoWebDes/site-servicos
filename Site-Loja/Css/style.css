@@ -19,7 +19,7 @@ body{
     text-decoration: none;
     padding: 20px; /* Espaçamento entre os links*/
     display: inline-block; 
-    transition: background .3s ; /* Responsável por criar timer quando passa o mouse por cima */
+    transition: background .3s ; /* Responsável por criar um timer quando passa o mouse por cima */
 }
 
 .menu ul li a:hover{
@@ -35,8 +35,9 @@ body{
     height: 70px;
 }
 
-li{
-    display: inline; /* Display responsável por alinhar os itens lado a lado */     
+ul{
+    display: flex;
+    list-style: none;
 }
 
 #conteudo{ /* Elemento Pai */
@@ -53,7 +54,7 @@ li{
     background-color: rgb(64, 68, 71);
     margin: auto;
     border-radius: 15px; /* Propriedade responsável por arredondar as bordas */
-    text-align: center;   
+    text-align: center;
     padding-top: 170px;
     margin-top: 250px;
 }
@@ -121,4 +122,80 @@ li{
     color: white;
     font-size: 25px;
     letter-spacing: 2px;
+}
+
+/* Responsividade do menu */
+.icons{
+    display: block;
+}
+
+.icons i{
+    display: none;
+}
+
+.openmenu{
+    display: none;
+}
+
+.closemenu{
+    display: none;
+}
+
+.fa-facebook:hover{
+    color: rgba(255, 255, 255, 0.589);
+}
+.fa-instagram:hover{
+    color: rgba(255, 255, 255, 0.589);
+}
+.fa-twitter:hover{
+    color: rgba(255, 255, 255, 0.589);
+}
+.fa-github:hover{
+    color: rgba(255, 255, 255, 0.589);
+}
+
+@media(max-width: 800px){
+    ul{
+        height: 80vh;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        list-style: none;
+        background-color: rgb(64, 68, 71);
+        z-index: 10;
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        transition: top 1s ease;
+    }
+
+    .icons i{
+        display: inline-block;
+        color: white;
+        cursor: pointer;
+        padding: 12px;
+        font-size: 30px;
+    }
+
+    .openmenu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .closemenu{
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }
